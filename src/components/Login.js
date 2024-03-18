@@ -11,12 +11,12 @@ import {
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import picture from "../images/picture.jpg";
+
 
 const Login = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -59,8 +59,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL:
-              "https://dgoda.netlify.app/static/media/formal.346d6021502c29a86669.jpeg",
+            photoURL: picture,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -69,24 +68,22 @@ const Login = () => {
                   uid: uid,
                   email: email,
                   displayName: displayName,
-                  photoURL: photoURL
+                  photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               // An error occurred
               // ...
             });
-          console.log(user);
+          // console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
           setErrorMessage(errorMessage);
-          console.log(errorCode + ":" + errorMessage);
+          // console.log(errorCode + ":" + errorMessage);
         });
-      navigate("/browse");
     } else {
       // sign in logic
       signInWithEmailAndPassword(
@@ -97,8 +94,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          console.log(user);
-          navigate("/browse");
+          // console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
