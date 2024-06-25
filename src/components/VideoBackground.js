@@ -9,7 +9,7 @@ const VideoBackground = ({ movieId }) => {
     <div className="w-screen">
       <iframe
         // width="100%"
-        // height="315"
+        // height="920"
         className="w-full aspect-video"
         src={
           "https://www.youtube.com/embed/" +

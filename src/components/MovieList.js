@@ -2,12 +2,12 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
-  console.log("Popular movies", movies);
+  // console.log("Popular movies", movies);
   if (movies === null || movies.length === 0) {
     return;
   }
 
-  console.log("Movie list", movies);
+  // console.log("Movie list", movies);
   return (
     <div className="px-6">
       <h1 className="text-3xl py-2 pl-6 text-white">{title}</h1>

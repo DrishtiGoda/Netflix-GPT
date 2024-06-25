@@ -34,18 +34,22 @@
 - TMDB Image CDN 
 - Made the browse page with TailwindCSS
 - usePopularMovies Custom Hook
+- GPT Search Page
+- GPT Search Bar
+- Multi language feature
+- Integrate GPT APIs
 
 ## Features
-  - Login/ Sign up
-  - Sign in / Sign up form
-  - redirect to Browse Page
-  - Browse (after authentication)
-  - Header
-  - Main movie
-    - Trailer in background
-    - Title and decription
-    - Movie suggestions
-    - Movie List * N
-  - Netflix GPT
-  - Search bar
+- Login/ Sign up
+- Sign in / Sign up form
+- redirect to Browse Page
+- Browse (after authentication)
+- Header
+- Main movie
+  - Trailer in background
+  - Title and decription
   - Movie suggestions
+  - Movie List * N
+- Netflix GPT
+- Search bar
+- Movie suggestions
