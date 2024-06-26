@@ -2,7 +2,7 @@ import React from "react";
 import MovieCard from "./MovieCard";
 
 const MovieList = ({ title, movies }) => {
-  // console.log("Popular movies", movies);
+  console.log("Popular movies", movies);
   if (movies === null || movies.length === 0) {
     return;
   }

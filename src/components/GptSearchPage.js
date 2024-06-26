@@ -6,13 +6,12 @@ import background from "../images/background.jpg";
 const GptSearch = () => {
   return (
     <div>
-      <div className="absolute -z-10">
+      <div className="fixed -z-10">
+        <div className="absolute h-screen w-screen  bg-black opacity-85"></div>
         <img
-          // className="absolute h-screen w-screen bg-cover"
           src={background}
           alt="logo"
         />
-        <div className="absolute h-screen w-screen bg-black opacity-65 "></div>
       </div>
 
       <GptSearchBar />
