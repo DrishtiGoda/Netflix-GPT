@@ -1,6 +1,10 @@
 # Step 1: Use a node.js base image
 FROM node:14
 
+# Set environment variables
+ARG TMDB_API_KEY
+ENV REACT_APP_TMDB_API_KEY=$TMDB_API_KEY
+
 # Step 2: Set the working directory
 WORKDIR /app
 
