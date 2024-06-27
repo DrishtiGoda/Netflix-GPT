@@ -109,7 +109,7 @@ const Login = () => {
       <Header />
       <div className="relative">
         <img
-          className="absolute h-screen w-screen bg-cover"
+          className="absolute h-screen w-screen object-cover"
           src={background}
           alt="logo"
         />
@@ -118,7 +118,7 @@ const Login = () => {
       <div className="h-screen flex items-center justify-center">
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="absolute w-3/12 p-12 bg-black  flex items-start justify-center flex-col bg-opacity-65"
+          className="absolute w-full md:w-3/12 p-12 bg-black flex items-start justify-center flex-col bg-opacity-65"
         >
           <h1 className="text-white text-2xl">
             {isSignInForm ? "Sign In" : "Sign Up"}

@@ -62,14 +62,14 @@ const Header = () => {
   }, []);
 
   return (
-    <div className=" absolute flex justify-between w-screen text-white z-10">
-      <img src={logo} alt="logo" className="h-12 mx-48 my-5 z-10" />
+    <div className=" absolute flex w-screen text-white z-10 flex-col  md:flex-row  md:justify-between">
+      <img src={logo} alt="logo" className="h-12 mx-auto md:mx-48 mt-5 z-10" />
       {user && (
-        <div className="flex items-center p-5">
+        <div className="flex items-center justify-center md:p-5">
           <button
             className="py-1 px-2 m-2 text-white hover:text-gray-400 rounded"
             onClick={handleGptSearchClick}
-          >
+          > 
             {gptSearch ? "Home" : "GPT Search "}
           </button>
           {gptSearch ? (

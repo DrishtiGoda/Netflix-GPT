@@ -38,6 +38,12 @@
 - GPT Search Bar
 - Multi language feature
 - Integrate GPT APIs
+- Fetched gptMovieSuggestions from TMDB
+- created gptSlice 
+- Reused movie list component to make movie suggestion container
+- Memoization
+- Adding .env file
+- Made out site responsive
 
 ## Features
 - Login/ Sign up
